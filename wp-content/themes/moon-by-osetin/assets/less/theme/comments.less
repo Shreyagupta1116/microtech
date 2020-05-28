@@ -1,0 +1,132 @@
+.comments-area {
+  max-width: 100%;
+  margin: 30px auto 20px auto;
+}
+.comment-respond {
+  .comment-reply-title {
+    margin-bottom: 20px;
+    position: relative;
+    .details-heading {
+      &:before {
+        .osfont();
+        content: "\f086";
+        font-size: 20px;
+        margin-right: 15px;
+      }
+    }
+  }
+  .comment-form {
+    p {
+      margin-bottom: 15px;
+      label {
+        display: block;
+      }
+      input[type="text"], input[type="url"], input[type="email"], textarea {
+        .form-control;
+        padding: 7px 8px;
+        height: auto;
+      }
+      textarea {
+        height: 80px;
+      }
+    }
+    p.comment-notes {
+      text-transform: uppercase;
+      font-size: 11px;
+      margin-bottom: 15px;
+      background-color: #f3ecc8;
+      padding: 8px 10px;
+    }
+    input#submit {
+      .btn;
+      .btn-solid-black;
+    }
+  }
+}
+
+.comments-title {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding-top: 40px;
+  i {
+    margin-right: 10px;
+    font-size: 38px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.comment-list, .children {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 40px;
+  .comment-body {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+  .comment-meta {
+    .clearfix();
+  }
+
+  .comment-author {
+    float: left;
+    margin-bottom: 20px;
+    img {
+      margin-right: 10px;
+    }
+  }
+  .comment-metadata {
+    float: right;
+    text-transform: uppercase;
+    font-size: 10px;
+    position: relative;
+    .edit-link {
+      background-color: #bf3b39;
+      color: #fff;
+      display: inline-block;
+      padding: 3px 5px;
+      position: absolute;
+      top: -27px;
+      right: 0px;
+      a {
+        color: #fff;
+        font-weight: @textFontWeightBold;
+      }
+    }
+  }
+  .reply {
+    display: inline-block;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    padding: 2px 4px;
+    font-size: 12px;
+    line-height: 14px;
+    float: right;
+    &:hover {
+      text-decoration: none;
+      border-bottom: 1px solid rgba(0,0,0,0.2);
+    }
+  }
+  .comment-content {
+    p:last-child{
+      margin-bottom: 0px;
+    }
+  }
+}
+.comment-list ol.children {
+  padding-left: 40px;
+  li {
+
+  }
+}
+.comment-list > li:last-child .comment-body {
+  border-bottom: none;
+}

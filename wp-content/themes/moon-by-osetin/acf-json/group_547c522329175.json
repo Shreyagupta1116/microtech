@@ -1,0 +1,306 @@
+{
+    "key": "group_547c522329175",
+    "title": "Theme Settings - Header",
+    "fields": [
+        {
+            "key": "field_54f3e3a23275f",
+            "label": "Navigation Menu Type",
+            "name": "navigation_menu_type",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "slideout": "Slideout",
+                "flown": "Flown Over Content",
+                "full_screen": "Full Screen",
+                "borders_around_visible": "Padded Around Content (Visible on page load)",
+                "borders_around_hidden": "Padded Around Content (Hidden on page load)",
+                "top_hidden": "Top Hidden",
+                "top_visible": "Top Visible",
+                "left": "On the Left"
+            },
+            "default_value": {
+                "slideout": "slideout"
+            },
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_547c522f584dc",
+            "label": "Logo for Top & Padded menus",
+            "name": "logo_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_54f3e3a23275f",
+                        "operator": "==",
+                        "value": "borders_around_visible"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_54f3e3a23275f",
+                        "operator": "==",
+                        "value": "borders_around_hidden"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_54f3e3a23275f",
+                        "operator": "==",
+                        "value": "top_hidden"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_54f3e3a23275f",
+                        "operator": "==",
+                        "value": "top_visible"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5572974b2e7f1",
+            "label": "Logo for menu on the left",
+            "name": "logo_image_menu_on_the_left",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_54f3e3ce752d1",
+            "label": "Menu Background Color Scheme",
+            "name": "menu_background_color_scheme",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "light": "Light",
+                "dark": "Dark"
+            },
+            "default_value": {
+                "dark": "dark"
+            },
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_54f3e3fe752d2",
+            "label": "Menu Background Custom Color",
+            "name": "menu_background_custom_color",
+            "type": "color_picker",
+            "instructions": "Leave blank to use default color",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_56da0a9c2893c",
+            "label": "Mobile Menu Background Color Scheme",
+            "name": "mobile_menu_background_color_scheme",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "dark": "Dark",
+                "light": "Light"
+            },
+            "default_value": [
+                "dark"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_56da0abf2893d",
+            "label": "Mobile Menu Background Custom Color",
+            "name": "mobile_menu_background_custom_color",
+            "type": "color_picker",
+            "instructions": "Leave blank to use default color for the color scheme you selected above",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_581d5d1069743",
+            "label": "Menu Left Width",
+            "name": "menu_left_width",
+            "type": "number",
+            "instructions": "Menu on the left width",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_54f3e3a23275f",
+                        "operator": "==",
+                        "value": "left"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "px",
+            "min": 0,
+            "max": "",
+            "step": 1
+        },
+        {
+            "key": "field_581d62b369744",
+            "label": "Slideout Menu width",
+            "name": "slideout_menu_width",
+            "type": "number",
+            "instructions": "Slideout Menu Width",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_54f3e3a23275f",
+                        "operator": "==",
+                        "value": "slideout"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "px",
+            "min": 0,
+            "max": "",
+            "step": 1
+        },
+        {
+            "key": "field_59c9edef4f20d",
+            "label": "Mobile Menu Logo",
+            "name": "mobile_menu_logo",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-header"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1506408547
+}

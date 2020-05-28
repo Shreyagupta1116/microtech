@@ -1,0 +1,128 @@
+/*
+Theme Name: Moon by Osetin
+Theme URI: http://moon.pinsupreme.com
+Author: Tamik Soziev
+Author URI: http://soziev.com/
+Description: Gorgeous Photography Portfolio & Blog WordPress theme for creative bloggers and photographers.
+Version: 5.0.5
+License:
+License URI:
+Tags: black, blue, gray, white, yellow, dark, light, responsive-layout, custom-background, custom-colors, custom-menu, featured-images, post-formats
+Text Domain: moon-by-osetin
+*/
+
+.wp-caption {
+  max-width: 100%;
+}
+.wp-caption-text {
+  display: none;
+}
+.sticky {
+
+}
+.gallery-caption {
+
+}
+.bypostauthor {
+
+}
+.alignright {
+  text-align: right;
+}
+.alignleft {
+  text-align: left;
+}
+.aligncenter {
+  text-align: center;
+}
+
+img.alignleft { text-align: left; float: left; margin: 1em 1em 1em 0; }
+img.alignright { text-align: right; float: right; margin: 1em 0 1em 1em; }
+.box{
+	background: #e6e6e6;
+    /* background-image: linear-gradient(135deg, #ffe2b2 0%, #ea9d1c 100%); */
+    padding: 0 15px 8px;
+    box-shadow: 0 3px 12px -1px rgb(183, 183, 179), 0 22px 27px -32px rgba(212, 212, 212, 0.64);
+    text-align: center;
+    margin-top: 18px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.box h2{
+	color: #000 !important;
+    font-size: 25px;
+    border-bottom: 0px solid transparent !important;
+    margin-bottom: 10px !important;
+}
+.box p{
+	color: #111;
+	text-align: center;
+	padding-bottom: 13px;
+}
+.box p:last-child{
+	text-align: center;
+}
+.box p a{
+	text-align: center;
+    margin: 0 auto;
+    background: #111;
+    border: 1px solid #111;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 14px;
+	font-family: 'Unica One', sans-serif;
+}
+.box a:hover{
+	text-decoration: none;
+	background: #fff;
+	color: #000;
+}
+.counter-box{
+/* 	background: #e6e6e6; */
+	background: url('http://microprosolutions.in/micro/wp-content/uploads/2020/05/html-color-codes-color-tutorials-hero-00e10b1f-scaled.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-top: 40px;
+    border-radius: 20px;
+	box-shadow: 0 3px 12px -1px rgb(58, 57, 56), 0 22px 27px -32px rgba(76, 73, 73, 0.49);
+	text-align: center;
+}
+.counter-box h2{
+	margin-bottom: 20px !important;
+}
+.box1{
+	background: #e6e6e6;
+    /* background-image: linear-gradient(135deg, #ffe2b2 0%, #ea9d1c 100%); */
+    padding: 0 15px 8px;
+    box-shadow: 0 3px 12px -1px rgb(183, 183, 179), 0 22px 27px -32px rgba(212, 212, 212, 0.64);
+/*     text-align: center; */
+    margin-top: 48px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.box1 h2{
+	color: #000 !important;
+    font-size: 18px;
+    border-bottom: 0px solid transparent !important;
+    margin-bottom: 10px !important;
+    font-weight: 600;
+}
+.box1 p{
+	color: #111;
+/* 	text-align: justify; */
+	padding-bottom: 13px;
+}
+
+.box1 p a{
+	text-align: center;
+    margin: 0 auto;
+    color: #111;
+/*     padding: 8px 20px; */
+    border-radius: 3px;
+    font-size: 14px;
+}
+.box1 a:hover{
+	text-decoration: none;
+}

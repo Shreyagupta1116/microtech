@@ -1,0 +1,166 @@
+{
+    "key": "group_54d987dc9ebaf",
+    "title": "Tile Settings",
+    "fields": [
+        {
+            "key": "field_54d987e13eede",
+            "label": "Squared Tiles",
+            "name": "squared_photos",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Make tiles squared",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_54e1af15126d3",
+            "label": "Double Sized Tiles",
+            "name": "auto_proportion_photos",
+            "type": "true_false",
+            "instructions": "Makes a wide photo occupy two columns if sliding is vertical, and if a sliding is horizontal it makes a tall image occupy two rows.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Double Size Tiles",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_54de88d2fcc7e",
+            "label": "Fade inactive photos",
+            "name": "fade_inactive_photos",
+            "type": "select",
+            "instructions": "Fades photos that are not active, only works on Full Height template type",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "default": "Default",
+                "no": "No",
+                "yes": "Yes"
+            },
+            "default_value": [
+                "default"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_59c0420778088",
+            "label": "Custom Settings for Image Actions",
+            "name": "custom_settings_for_image_actions",
+            "type": "true_false",
+            "instructions": "You can enable custom settings to show\/hide image actions (e.g. Download link, Like Button, Image Caption, Zoom). Default settings are located in \"Theme Settings -> Appearance -> Generic\" tab.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Use Custom Settings for Image Actions",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_59c042a278089",
+            "label": "Elements to hide on image hover",
+            "name": "what_to_hide_on_image_hover",
+            "type": "checkbox",
+            "instructions": "You can decide what elements to hide on image hover on the gallery type post or when you select \"Images\" in the \"What do you want to showcase\" field on masonry and full height page templates.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59c0420778088",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "zoom": "Zoom Icon",
+                "caption": "Image Caption",
+                "download": "Download Link",
+                "like": "Like Heart"
+            },
+            "allow_custom": 0,
+            "save_custom": 0,
+            "default_value": [],
+            "layout": "vertical",
+            "toggle": 0,
+            "return_format": "value"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_format",
+                "operator": "==",
+                "value": "gallery"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-full-height.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "shop.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-masonry.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "field",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1505773886
+}

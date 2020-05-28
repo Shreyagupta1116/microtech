@@ -1,0 +1,598 @@
+{
+    "key": "group_54858e254492e",
+    "title": "Filtering & Pagination Settings",
+    "fields": [
+        {
+            "key": "field_5549412c5c6b0",
+            "label": "Posts Filtering",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_55795738320b7",
+            "label": "What do you want to showcase?",
+            "name": "what_do_you_want_to_showcase",
+            "type": "select",
+            "instructions": "Decide whether you want to show posts (projects) which when clicked will open a new page with details or just images which open in a lightbox when you click , or a custom shortcode",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "posts": "Posts",
+                "images": "Images",
+                "shortcode": "Shortcode"
+            },
+            "default_value": {
+                "posts": "posts"
+            },
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_56d7f7f6423dd",
+            "label": "Make gallery selectable by user (photo proofing)",
+            "name": "make_gallery_selectable_by_user",
+            "type": "true_false",
+            "instructions": "This needs to be checked if you want to send this gallery to your client so he can approve the photos he likes (photo proofing) and then you can see which photos he has selected.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_55795738320b7",
+                        "operator": "==",
+                        "value": "images"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Allow users to mark photos they like",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5579601c6ccd7",
+            "label": "Gallery Photos",
+            "name": "gallery_photos",
+            "type": "gallery",
+            "instructions": "Select photos you want to showcase here",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_55795738320b7",
+                        "operator": "==",
+                        "value": "images"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "min": "",
+            "max": "",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "insert": "append"
+        },
+        {
+            "key": "field_54f9093c093b8",
+            "label": "Content Shortcode Value",
+            "name": "content_shortcode_value",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_55795738320b7",
+                        "operator": "==",
+                        "value": "shortcode"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_548e91d2a19cc",
+            "label": "Type of Posts to Show",
+            "name": "posts_to_show_type",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_55795738320b7",
+                        "operator": "==",
+                        "value": "posts"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "default": "All, Sorted by date (Filters Below)",
+                "specific_posts": "Specific Posts"
+            },
+            "default_value": {
+                "default": "default"
+            },
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_54858e2cca3eb",
+            "label": "Posts to Show",
+            "name": "posts_to_show",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_548e91d2a19cc",
+                        "operator": "==",
+                        "value": "specific_posts"
+                    },
+                    {
+                        "field": "field_55795738320b7",
+                        "operator": "==",
+                        "value": "posts"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Add Post",
+            "collapsed": "",
+            "sub_fields": [
+                {
+                    "key": "field_54858e37ca3ec",
+                    "label": "Post Object",
+                    "name": "post_object",
+                    "type": "post_object",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "post"
+                    ],
+                    "taxonomy": [],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "return_format": "object",
+                    "ui": 1
+                },
+                {
+                    "key": "field_54858e6cca3ed",
+                    "label": "Content Background Type",
+                    "name": "content_background_type",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "light": "Light",
+                        "dark": "Dark"
+                    },
+                    "default_value": {
+                        "light": "light"
+                    },
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": "",
+                    "disabled": 0,
+                    "readonly": 0,
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_54858e84ca3ee",
+                    "label": "Content Background Custom Color",
+                    "name": "content_background_custom_color",
+                    "type": "color_picker",
+                    "instructions": "Leave blank for default",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": ""
+                },
+                {
+                    "key": "field_54858e9eca3ef",
+                    "label": "Double Width",
+                    "name": "double_width",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "Make it double width",
+                    "default_value": 0,
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                },
+                {
+                    "key": "field_54858eb5ca3f0",
+                    "label": "Double Height",
+                    "name": "double_height",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "Make it double height",
+                    "default_value": 0,
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                }
+            ]
+        },
+        {
+            "key": "field_5521a0488d2f5",
+            "label": "Show Posts from the following categories",
+            "name": "posts_from_categories",
+            "type": "taxonomy",
+            "instructions": "Leave blank to show from all categories",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_548e91d2a19cc",
+                        "operator": "==",
+                        "value": "default"
+                    },
+                    {
+                        "field": "field_55795738320b7",
+                        "operator": "==",
+                        "value": "posts"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "category",
+            "field_type": "multi_select",
+            "allow_null": 0,
+            "add_term": 0,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "multiple": 0
+        },
+        {
+            "key": "field_5521db2277721",
+            "label": "Show Posts with the following tags",
+            "name": "posts_with_tags",
+            "type": "taxonomy",
+            "instructions": "Leave blank to show posts with any tags.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_548e91d2a19cc",
+                        "operator": "==",
+                        "value": "default"
+                    },
+                    {
+                        "field": "field_55795738320b7",
+                        "operator": "==",
+                        "value": "posts"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "post_tag",
+            "field_type": "multi_select",
+            "allow_null": 0,
+            "add_term": 0,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "multiple": 0
+        },
+        {
+            "key": "field_5521db4777722",
+            "label": "Show Posts with the following formats",
+            "name": "posts_with_format",
+            "type": "taxonomy",
+            "instructions": "Leave blank to show posts from all formats.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_548e91d2a19cc",
+                        "operator": "==",
+                        "value": "default"
+                    },
+                    {
+                        "field": "field_55795738320b7",
+                        "operator": "==",
+                        "value": "posts"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "post_format",
+            "field_type": "multi_select",
+            "allow_null": 0,
+            "add_term": 0,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "multiple": 0
+        },
+        {
+            "key": "field_552da600d5730",
+            "label": "Exclude posts with following formats",
+            "name": "posts_without_format",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_548e91d2a19cc",
+                        "operator": "==",
+                        "value": "default"
+                    },
+                    {
+                        "field": "field_55795738320b7",
+                        "operator": "==",
+                        "value": "posts"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "post_format",
+            "field_type": "multi_select",
+            "allow_null": 0,
+            "add_term": 0,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "multiple": 0
+        },
+        {
+            "key": "field_5521a3db9d752",
+            "label": "Tiles with double height",
+            "name": "tiles_with_double_height",
+            "type": "text",
+            "instructions": "Use either a comma separated values or a single value, the single value works as a repeater, it will repeat a double height posts every N number of posts. Leave blank if you don't want any posts to be double height.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_548e91d2a19cc",
+                        "operator": "==",
+                        "value": "default"
+                    },
+                    {
+                        "field": "field_55795738320b7",
+                        "operator": "==",
+                        "value": "posts"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5521a8659d754",
+            "label": "Tiles with double width",
+            "name": "tiles_with_double_width",
+            "type": "text",
+            "instructions": "Use either a comma separated values or a single value, the single value works as a repeater, it will repeat a double width posts every N number of posts. Leave blank if you don't want any posts to be double width.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_548e91d2a19cc",
+                        "operator": "==",
+                        "value": "default"
+                    },
+                    {
+                        "field": "field_55795738320b7",
+                        "operator": "==",
+                        "value": "posts"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5549416f234c5",
+            "label": "Pagination Type",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_55459820d9059",
+            "label": "Pagination Type",
+            "name": "pagination_type",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "default": "Default (From Theme Settings - General)",
+                "classic": "Classic (Classic Wordpress \"Previous\/Next\" links)",
+                "page_numbers": "Page numbers",
+                "infinite_button": "Shows a button to load more posts",
+                "infinite_scroll": "Automatically load more posts when end is reached"
+            },
+            "default_value": {
+                "": ""
+            },
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-masonry.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-full-height.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "field",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1505762982
+}

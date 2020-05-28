@@ -1,0 +1,50 @@
+{
+    "key": "group_54843eece1ca4",
+    "title": "Contact Map Settings",
+    "fields": [
+        {
+            "key": "field_54843f0f4caa6",
+            "label": "Iframe code from Google Maps",
+            "name": "iframe_code_from_google_maps",
+            "type": "text",
+            "instructions": "Paste the iframe code you got from google maps. Read more info here: http:\/\/en.support.wordpress.com\/google-maps\/",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            },
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-with-map.php"
+            }
+        ]
+    ],
+    "menu_order": -1,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1505762601
+}

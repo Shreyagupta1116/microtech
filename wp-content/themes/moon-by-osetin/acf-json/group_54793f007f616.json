@@ -1,0 +1,1166 @@
+{
+    "key": "group_54793f007f616",
+    "title": "Theme Settings - General",
+    "fields": [
+        {
+            "key": "field_552b14538ba4f",
+            "label": "Slider & Tiles",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_54ae39101e0e0",
+            "label": "Sliding Type",
+            "name": "sliding_type",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "horizontal": "Horizontal",
+                "vertical": "Vertical"
+            },
+            "default_value": {
+                "horizontal": "horizontal"
+            },
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_551f923e8942c",
+            "label": "Responsive Columns",
+            "name": "responsive_columns",
+            "type": "select",
+            "instructions": "Check this if you want the system to automatically select appropriate amount of columns depending on user screen size.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "no": "No",
+                "yes": "Yes"
+            },
+            "default_value": {
+                "no": "no"
+            },
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_551f926a8942d",
+            "label": "Preferred column size",
+            "name": "preferred_column_size",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_551f923e8942c",
+                        "operator": "==",
+                        "value": "yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "px",
+            "min": 80,
+            "max": "",
+            "step": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_54793f1be7a4e",
+            "label": "Number of Rows\/Columns on Masonry Page",
+            "name": "page_masonry_rows_count",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_551f923e8942c",
+                        "operator": "==",
+                        "value": "no"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "one": "One",
+                "two": "Two",
+                "three": "Three",
+                "four": "Four",
+                "five": "Five"
+            },
+            "default_value": [
+                "two"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_55209ea184d08",
+            "label": "Minimum possible size of the tile",
+            "name": "minimum_possible_size_of_the_tile",
+            "type": "number",
+            "instructions": "This value determines how small the tile could become before it splits up the into less columns, thus making each column bigger.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 120,
+            "placeholder": "",
+            "prepend": "",
+            "append": "px",
+            "min": 100,
+            "max": "",
+            "step": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_552b10fa06673",
+            "label": "Tile Size",
+            "name": "custom_size",
+            "type": "text",
+            "instructions": "Tile width if sliding horizontally, or tile height is sliding vertically in pixels or percentage. (you can use something like 400px, or 30%). Leave blank to let it decide appropriate size automatically",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_552231ea08587",
+            "label": "Pagination Type",
+            "name": "pagination_type",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "classic": "Classic (Classic Wordpress \"Previous\/Next\" links)",
+                "page_numbers": "Page numbers",
+                "infinite_button": "Shows a button to load more posts",
+                "infinite_scroll": "Automatically load more posts when end is reached"
+            },
+            "default_value": {
+                "infinite_button": "infinite_button"
+            },
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_54de8927e083d",
+            "label": "Fade inactive photos",
+            "name": "fade_inactive_photos",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "no": "No",
+                "yes": "Yes"
+            },
+            "default_value": {
+                "no": "no"
+            },
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_54794095da195",
+            "label": "Excerpt text length in words",
+            "name": "index_excerpt_length",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 16,
+            "placeholder": "",
+            "prepend": "",
+            "append": "words",
+            "min": 0,
+            "max": "",
+            "step": 1,
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_56bd5ffd10bca",
+            "label": "Show \"Customize\" button",
+            "name": "show_grid_settings_button",
+            "type": "select",
+            "instructions": "You can enable or disable the grid settings button which allows your visitors to control how the grid of photos is being displayed along with showing and hiding content panels and reading mode for stories.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "yes": "Yes",
+                "no": "No"
+            },
+            "default_value": [
+                "yes"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_56becd17a68f4",
+            "label": "Maximum number of photos to load per page",
+            "name": "photos_per_page",
+            "type": "number",
+            "instructions": "For the gallery posts and masonry\/full height templates with \"images\" selected for \"what to showcase\" fields you can set how many of images to show per page, this is helpful if you have a lot of images on a page and want to limit it for faster loading. You can leave it as 0 and that will load all of the images on page load.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": 0,
+            "max": "",
+            "step": 1,
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_56d806a2c03c5",
+            "label": "Display Unlimited Number of Thumbnails per page",
+            "name": "display_unlimited_thumbnails_per_page",
+            "type": "true_false",
+            "instructions": "You can make all thumbnails load without respecting the limit on actual photos that you set above, this way clicking on thumbnail which image has not been loaded yet will trigger the \"infinite loading\" effect to load new images from the next page. It is useful when you have many columns of thumbnails and want to show them all on page load, but you still want to save bandwidth by not loading all the actual images, since thumbnails usually weight very little and don't cause loading delays. If unchecked - then the same amount of thumbnails will be loaded as the number of photos you set in a field above.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Display Unlimited Number of Thumbnails per page",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_56c04433a111c",
+            "label": "Pagination Type for Images",
+            "name": "pagination_type_for_images",
+            "type": "select",
+            "instructions": "If you select to split your post images with pagination in the field above - you can decide what type of pagination that would be",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "infinite_scroll": "Load next Images when end is reached",
+                "infinite_button": "Load next Images when the button is clicked at the end"
+            },
+            "default_value": {
+                "infinite_scroll": "infinite_scroll"
+            },
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_55274ffb769b7",
+            "label": "Labels",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_552758adb13e8",
+            "label": "Main Menu Button Label",
+            "name": "main_menu_button_label",
+            "type": "text",
+            "instructions": "What text you want to use for a button which activates a main menu. Leave blank to have just an icon.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Menu",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5527500a769b8",
+            "label": "Mobile",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_55275021769b9",
+            "label": "Content on the left button label",
+            "name": "content_on_the_left_button_label",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Story",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_552750b5e44e4",
+            "label": "Icon for content on the left button",
+            "name": "icon_for_content_on_the_left_button",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "os-icon-paper",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_55275073769bb",
+            "label": "Content in the middle button label",
+            "name": "content_in_the_middle_button_label",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Details",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_552750dae44e5",
+            "label": "Icon for content in the middle button",
+            "name": "icon_for_content_in_the_middle_button",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "os-icon-layers",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5527508a769bc",
+            "label": "Content on the right button label",
+            "name": "content_on_the_right_button_label",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Media",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_552750f4e44e6",
+            "label": "Icon for content on the right button",
+            "name": "icon_for_content_on_the_right_button",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "os-icon-grid",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_55286efd74725",
+            "label": "Other",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_55286f0574726",
+            "label": "Protect Images from Copying",
+            "name": "protect_images_from_copying",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Protect images from copying",
+            "default_value": 1,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_55286ffc0a07f",
+            "label": "Text for message on attempt to save",
+            "name": "text_for_image_right_click",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_55286f0574726",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "This photo is copyright protected",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_55715575c3c32",
+            "label": "Enable Comments for Posts",
+            "name": "enable_comments_for_posts",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Enable comments for posts",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_55139527b4ce8",
+            "label": "Show Social Icons on a Left Panel",
+            "name": "show_content_left_social_icons",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "yes": "Yes",
+                "no": "No"
+            },
+            "default_value": {
+                "no": "no"
+            },
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_553f34b8e0a32",
+            "label": "Show Social Icons in Footer",
+            "name": "show_footer_social_icons",
+            "type": "select",
+            "instructions": "Check this box if you want to show social icons in the footer. It only applies to a \"Borders around body\" menu type.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "yes": "Yes",
+                "no": "No"
+            },
+            "default_value": {
+                "no": "no"
+            },
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_553f102f902ec",
+            "label": "Social Icons",
+            "name": "social_icons_to_show",
+            "type": "repeater",
+            "instructions": "Select social networks you want to show links for.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Add Social Service",
+            "collapsed": "",
+            "sub_fields": [
+                {
+                    "key": "field_553f1059902ed",
+                    "label": "Service Name",
+                    "name": "service_name",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "flickr": "Flickr",
+                        "facebook": "Facebook",
+                        "twitter": "Twitter",
+                        "instagram": "Instagram",
+                        "behance": "Behance",
+                        "googleplus": "Google Plus",
+                        "fivehundredpx": "500px",
+                        "linkedin": "LinkedIn",
+                        "youtube": "YouTube",
+                        "vkontakte": "Vkontakte",
+                        "odnoklassniki": "Odnoklassniki",
+                        "email": "eMail",
+                        "rss": "RSS",
+                        "dribbble": "Dribbble",
+                        "vimeo": "Vimeo",
+                        "pinterest": "Pinterest",
+                        "tumblr": "Tumblr"
+                    },
+                    "default_value": [],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": "",
+                    "disabled": 0,
+                    "readonly": 0,
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_553f10d5902ee",
+                    "label": "Link to your profile",
+                    "name": "link_to_profile",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                }
+            ]
+        },
+        {
+            "key": "field_582132df033ec",
+            "label": "Pin Style on Single Pin Page",
+            "name": "pin_style_on_single_pin_page",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "classic": "Classic",
+                "complex": "Complex"
+            },
+            "default_value": [
+                "classic"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5546af0b6a641",
+            "label": "Intro",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5546af1b6a642",
+            "label": "Show loading animation",
+            "name": "show_loading_animation",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "yes": "Yes",
+                "no": "No"
+            },
+            "default_value": {
+                "yes": "yes"
+            },
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_56afc3749b64a",
+            "label": "Use Custom Image for Loading Animation",
+            "name": "custom_intro_loading_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_56afd069644d6",
+            "label": "Pulsate Intro Image",
+            "name": "pulsate_intro_image",
+            "type": "true_false",
+            "instructions": "If you select a custom image for the loading intro you can make it to have a pulsating animation by checking this box.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Make intro image pulsate",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5546af5a6a643",
+            "label": "Animation Duration",
+            "name": "animation_duration",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5546af1b6a642",
+                        "operator": "==",
+                        "value": "yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "images_loaded": "Show until images are fully loaded",
+                "custom_delay": "Set a custom delay in milliseconds",
+                "images_loaded_delay": "Wait until images are loaded + add more time"
+            },
+            "default_value": {
+                "images_loaded": "images_loaded"
+            },
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_5546d7f3b511d",
+            "label": "Animation Duration Time",
+            "name": "animation_duration_time",
+            "type": "number",
+            "instructions": "How many milliseconds you want the animation to run (e.g. enter 2000 for 2 seconds)",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5546af5a6a643",
+                        "operator": "!=",
+                        "value": "images_loaded"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 2000,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": 0,
+            "max": "",
+            "step": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5546b0366a644",
+            "label": "Loading status label",
+            "name": "loading_status_label",
+            "type": "text",
+            "instructions": "Leave blank to remove status label",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5546af1b6a642",
+                        "operator": "==",
+                        "value": "yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Loading. Please wait...",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5546b0ad6a645",
+            "label": "Color of loading wings",
+            "name": "color_of_loading_wings",
+            "type": "color_picker",
+            "instructions": "Leave blank to use default",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5546af1b6a642",
+                        "operator": "==",
+                        "value": "yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_5546bf94aa12e",
+            "label": "Loading Screen Background Color",
+            "name": "loading_screen_background_color",
+            "type": "color_picker",
+            "instructions": "leave blank to use default",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5546af1b6a642",
+                        "operator": "==",
+                        "value": "yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_5546c1966cd23",
+            "label": "Animation Label Color",
+            "name": "animation_label_color",
+            "type": "color_picker",
+            "instructions": "Leave blank to use default",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5546af1b6a642",
+                        "operator": "==",
+                        "value": "yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_5562f881ad821",
+            "label": "Single Post",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5562f893ad822",
+            "label": "Show Related Posts",
+            "name": "show_related_posts",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "yes": "Yes",
+                "no": "No"
+            },
+            "default_value": {
+                "yes": "yes"
+            },
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_556c37942a869",
+            "label": "Full Height",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_556c37b22a86a",
+            "label": "Send to post on tile click",
+            "name": "send_to_post_on_tile_click",
+            "type": "true_false",
+            "instructions": "If checked, users will be sent to a single post after they click on the tile. If unchecked - then additional details will appear with a read more button on a tile click.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Send to post on tile click",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_56aff5bada998",
+            "label": "Total gallery images to show on full height posts",
+            "name": "total_sub_images_to_show_on_full_height_posts",
+            "type": "number",
+            "instructions": "Select how many images you want to show for each post on the full height templated page, each post that has a \"gallery\" format will output a list of images from the gallery when you click on it, something like a preview, default is five.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 5,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": 0,
+            "max": "",
+            "step": 1,
+            "readonly": 0,
+            "disabled": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-general"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "field",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1538780787
+}

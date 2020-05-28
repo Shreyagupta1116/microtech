@@ -1,0 +1,54 @@
+// output for query monitor plugin for debugging
+body #qm {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 9999;
+  overflow: scroll;
+  margin-top: 0px!important;
+  border: none!important;
+  display: none!important;
+}
+
+.edit-post-link {
+  display: none;
+  position: absolute;
+  left: @bodyPadding;
+  bottom: @bodyPadding;
+  z-index: 9999;
+  a {
+    font-size: floor(@baseFontSize * 0.8);
+    font-weight: @headingsFontWeightBold;
+    background-color: #BF3B39;
+    color: #fff;
+    padding: 5px 8px;
+    text-transform: uppercase;
+    display: inline-block;
+  }
+}
+
+
+// Overwrite default wordpress gallery styles
+.gallery {
+  margin: 20px 0px!important;
+  .gallery-item {
+    margin: 0px!important;
+    padding: 5px;
+    img {
+      border: none!important;
+    }
+  }
+}
+
+.copyright-tooltip {
+  background-color: #111;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  position: absolute;
+  z-index: 12000;
+  display: none;
+}

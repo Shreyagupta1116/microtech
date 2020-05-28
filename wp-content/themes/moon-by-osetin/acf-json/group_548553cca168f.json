@@ -1,0 +1,167 @@
+{
+    "key": "group_548553cca168f",
+    "title": "Thumbnails Panel Settings",
+    "fields": [
+        {
+            "key": "field_54857b554faac",
+            "label": "Show Thumbnails Panel",
+            "name": "show_thumbnails_panel",
+            "type": "select",
+            "instructions": "note: This panel will not appear on \"Masonry\" template type unless you select \"Images\" in \"What do you want to showcase?\" field.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "hide": "Hide",
+                "show": "Show",
+                "remove": "Remove"
+            },
+            "default_value": {
+                "remove": "remove"
+            },
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_548584f1c065a",
+            "label": "Thumbnails Columns Count",
+            "name": "thumbnails_columns",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_54857b554faac",
+                        "operator": "!=",
+                        "value": "remove"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "one": "One",
+                "two": "Two",
+                "three": "Three"
+            },
+            "default_value": {
+                "one": "one"
+            },
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_5578e5c60145b",
+            "label": "Margin between thumbnails",
+            "name": "margin_between_thumbnails",
+            "type": "number",
+            "instructions": "Set a margin between items in thumbnails panel, use numbers, 0 for no margin.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": "px",
+            "min": 0,
+            "max": "",
+            "step": 1,
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_557cd038bfae7",
+            "label": "Border radius for thumbnails",
+            "name": "border_radius_for_thumbnails",
+            "type": "number",
+            "instructions": "Rounded borders radius of thumbnails from 0 to 50. ( e.g. 0 - no rounded corners, 50 - maximum rounded corners)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": "px",
+            "min": 0,
+            "max": 50,
+            "step": 1,
+            "readonly": 0,
+            "disabled": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            },
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-full-height.php"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            },
+            {
+                "param": "post_format",
+                "operator": "==",
+                "value": "gallery"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            },
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-masonry.php"
+            }
+        ]
+    ],
+    "menu_order": -1,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "field",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1505845889
+}

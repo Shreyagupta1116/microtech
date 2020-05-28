@@ -1,0 +1,197 @@
+.content-right {
+  #birs_appointment_form {
+    .birs_form_field {
+      padding: 0px;
+      margin: 0px;
+      margin-bottom: 20px;
+      &.birs_appointment_section, &.birs_client_section {
+        position: relative;
+        &:before {
+          .os-icon();
+          content: "\e034";
+          position: absolute;
+          top: 3px;
+          left: -35px;
+          font-size: 20px;
+          color: rgba(0,0,0,0.9);
+        }
+      }
+      &.birs_client_section {
+        &:before {
+          content: "\e9a4";
+        }
+      }
+      .birs_section {
+        font-size: floor(@baseFontSize * 1.4);
+        border-bottom: 1px solid rgba(0,0,0,0.5);
+        margin: 0px 0px 20px;
+        padding: 0px 0px 15px 0px;
+      }
+      &.birs_appointment_location, &.birs_appointment_service, &.birs_appointment_staff {
+        float: left;
+        width: 40%;
+        padding-right: 20px;
+      }
+      &.birs_appointment_staff {
+        padding-right: 0px;
+        width: 20%;
+      }
+      &.birs_appointment_date {
+        clear: left;
+      }
+      textarea {
+        .form-control;
+        height: 55px;
+      }
+      &.birs_client_section {
+        margin-top: 40px;
+      }
+
+      &.birs_client_name_first, &.birs_client_name_last, &.birs_client_email, &.birs_client_phone {
+        float: left;
+        width: 50%;
+      }
+      &.birs_client_email {
+        clear: left;
+      }
+      &.birs_client_name_first, &.birs_client_email {
+        padding-right: 20px;
+      }
+      &.birs_client_name_last, &.birs_client_phone {
+        padding-left: 20px;
+      }
+      input[type="text"] {
+        .form-control;
+      }
+    }
+    .ui-datepicker {
+      border: none;
+      border-radius: 0px;
+      .ui-datepicker-title {
+        text-transform: uppercase;
+        font-size: floor(@baseFontSize * 0.8);
+        font-weight: @headingsFontWeightBold;
+      }
+      th {
+        padding: 5px;
+      }
+      td {
+        border: 1px solid rgba(0,0,0,0.1);
+        border-collapse: collapse;
+        font-size: floor(@baseFontSize * 1.1);
+        padding: 5px;
+        a {
+          padding: 0px;
+          color: rgba(0,0,0,0.9);
+          font-weight: @headingsFontWeightBold;
+        }
+        span {
+          padding: 0px;
+        }
+        &.ui-datepicker-unselectable {
+          color: rgba(0,0,0,0.4);
+        }
+      }
+      .ui-datepicker-header {
+        padding: 5px 10px;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        border-top: 1px solid rgba(0,0,0,0.1);
+      }
+    }
+
+    .ui-datepicker-prev, .ui-datepicker-next {
+      width: 20px;
+      height: 20px;
+      top: 5px;
+    }
+    .ui-datepicker-next {
+      right: 0px;
+    }
+    #birs_appointment_datepicker {
+      .ui-widget-header .ui-icon {
+        content: "";
+        text-indent: inherit;
+        color: rgba(0,0,0,0.8);
+        background-image: none;
+        font-size: 16px;
+        line-height: 16px;
+      }
+      .ui-icon-circle-triangle-w:before {
+        font-size: 16px;
+        line-height: 16px;
+        .os-icon();
+        content: "\e92e";
+        margin-right: 10px;
+      }
+      .ui-icon-circle-triangle-e:before {
+        font-size: 16px;
+        line-height: 16px;
+        .os-icon();
+        content: "\e92f";
+        margin-right: 10px;
+      }
+      .ui-state-active {
+        background-color: #111;
+        color: #fff;
+      }
+    }
+    .birs_field_content, .birs_form_field select {
+      max-width: inherit;
+    }
+
+    div#birs_appointment_timeoptions  {
+      border-color: rgba(0,0,0,0.2);
+      span a {
+        color: rgba(0,0,0,0.8);
+        border-radius: 2px;
+        background-color: #fff;
+        .box-shadow(1px 1px 1px 0px rgba(0,0,0,0.1));
+        margin: 3px;
+        padding: 5px 0px 5px;
+        width: 75px;
+        text-align: center;
+        font-size: @baseFontSize;
+        line-height: @baseFontSize;
+        &:hover, &.selected {
+          background-color: #111;
+          text-decoration: none;
+          color: #fff;
+          .box-shadow(none);
+        }
+      }
+    }
+    .birs_field_content.birs_field_paragraph {
+      max-width: inherit;
+    }
+    .button {
+      .btn();
+      .btn-solid-black();
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+}
+
+#birs_booking_success {
+  h3 {
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+    margin: 0px 0px 40px;
+    padding: 0px 0px 15px 0px;
+  }
+  ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    li {
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px dotted rgba(0,0,0,0.2);
+      h4 {
+        display: inline-block;
+        border-bottom: 1px solid rgba(0,0,0,0.3);
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

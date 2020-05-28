@@ -1,0 +1,28 @@
+{
+  "name": "moon-by-osetin",
+  "authors": [
+    "Tamik"
+  ],
+  "description": "moon - wordpress theme for photographers and creatives",
+  "main": "moon-bower",
+  "moduleType": [],
+  "keywords": [
+    "bower",
+    "for",
+    "moon"
+  ],
+  "license": "MIT",
+  "homepage": "pinsupreme.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "slick-carousel": "^1.5.9",
+    "imagesloaded": "^4.1.0"
+  }
+}

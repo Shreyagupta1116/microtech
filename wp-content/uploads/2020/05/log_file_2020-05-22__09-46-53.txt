@@ -1,0 +1,45 @@
+
+---Downloaded files---
+The import files for: Demo Import 1 were successfully downloaded!
+Initial max execution time = 30
+Files info:
+Site URL = http://www.impilo.in/micr
+Data file = /home/impil2ru/public_html/micr/wp-content/uploads/2020/05/demo-content-import-file_2020-05-22__09-46-53.xml
+Widget file = /home/impil2ru/public_html/micr/wp-content/uploads/2020/05/demo-widgets-import-file_2020-05-22__09-46-53.json
+Customizer file = not defined!
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+Shop Page Sidebar : 
+
+Products by Rating - Top Products - Imported
+Product Categories - Categories - Imported
+Product Tag Cloud - Popular Tags - Imported
+
+Primary Sidebar : 
+
+Recent Posts w/Thumbnails - Recent Posts - Imported
+Tag Cloud - No Title - Imported
+Categories - No Title - Widget already exists
+
+Single Post Sidebar : 
+
+Recent Posts w/Thumbnails - Recent Projects - Imported
+
+
+
+---pt-ocdi/after_import---
+

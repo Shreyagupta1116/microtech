@@ -1,0 +1,108 @@
+.post-share-screen {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 10002;
+  display: none;
+  .post-share-screen-fader {
+    background-color: rgba(255,255,255,0.8);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 1;
+  }
+  .post-share-box {
+    width: 540px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: #fff;
+    padding: 50px;
+    z-index: 2;
+    border-radius: 6px;
+    .transform(translate(-50%, -50%));
+    .box-shadow(0px 30px 70px 0px rgba(0,0,0,0.2));
+    .psb-close {
+      color: rgba(0,0,0,0.6);
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 18px;
+      .transition(all 0.1s ease);
+      display: inline-block;
+      &:hover {
+        cursor: pointer;
+        .transform(scale(1.2));
+        color: #000;
+      }
+    }
+    .post-share-header {
+      margin-top: 0px;
+      line-height: 1.4;
+      margin-bottom: 30px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(0,0,0,0.2);
+      text-align: center;
+      font-size: floor(@baseFontSize * 1.7);
+      letter-spacing: -0.5px;
+    }
+    .psb-links {
+      text-align: center;
+      .psb-link {
+        width: 80px;
+        height: 80px;
+        padding: 10px;
+        margin: 0px 5px;
+        display: inline-block;
+        color: #fff;
+        text-align: center;
+        .transition(all 0.2s ease);
+        text-decoration: none!important;
+        border-radius: 6px;
+        .opacity(0.9);
+        &.psb-facebook { background-color: #3b5998; }
+        &.psb-twitter { background-color: #5ea9dd; }
+        &.psb-pinterest { background-color: #cc2026; }
+        &.psb-mail { background-color: #272727; }
+        &.psb-instagram { background-color: #b33271; background-image: linear-gradient(-45deg,#6507d2,#ffa107); }
+        i {
+          font-size: 42px;
+          line-height: 60px;
+        }
+        &:hover {
+          text-decoration: none;
+          cursor: pointer;
+          .scale(1.05);
+          .opacity(1);
+        }
+      }
+    }
+    .psb-url {
+      margin-top: 30px;
+      .psb-url-heading {
+        font-size: @baseFontSize * 0.8;
+        letter-spacing: 1px;
+        color: #444;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        text-align: center;
+      }
+      .psb-url-input {
+        display: block;
+        padding: 5px 8px;
+        border: 2px solid #d2d2da;
+        font-size: 18px;
+        color: rgba(0,0,0,0.6);
+        width: 100%;
+        text-align: center;
+        border-radius: 6px;
+        color: #12151b;
+        background-color: #f1f1f1;
+      }
+    }
+  }
+}

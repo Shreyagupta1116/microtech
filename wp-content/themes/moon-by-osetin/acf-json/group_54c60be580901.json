@@ -1,0 +1,352 @@
+{
+    "key": "group_54c60be580901",
+    "title": "Slider Settings",
+    "fields": [
+        {
+            "key": "field_54c60cad6c37e",
+            "label": "Sliding Type",
+            "name": "sliding_type",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "default": "Default (From General Settings)",
+                "horizontal": "Horizontal",
+                "vertical": "Vertical"
+            },
+            "default_value": {
+                "horizontal": "horizontal"
+            },
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_54c60c336c379",
+            "label": "Hide Navigation Arrows",
+            "name": "hide_navigation_arrows",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Hide Navigation Arrows",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_55494231f820a",
+            "label": "Navigation arrows background type",
+            "name": "slider_navigation_controls_background_type",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_54c60c336c379",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "default": "Default",
+                "dark": "Dark",
+                "light": "Light"
+            },
+            "default_value": {
+                "default": "default"
+            },
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_551f719f7a84e",
+            "label": "Responsive Columns",
+            "name": "responsive_columns",
+            "type": "select",
+            "instructions": "Set this to \"YES\" if you want the system to automatically select appropriate amount of columns and rows depending on user screen size. Default is set in \"Theme Settings\" - \"General\" - \"Slider and Tiles\" tab",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "default": "Default",
+                "no": "No",
+                "yes": "Yes"
+            },
+            "default_value": [
+                "default"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_551f71ee7a84f",
+            "label": "Preferred column size",
+            "name": "preferred_column_size",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_551f719f7a84e",
+                        "operator": "==",
+                        "value": "yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "px",
+            "min": 80,
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_54dd06eb8886a",
+            "label": "Rows Count",
+            "name": "page_masonry_rows_count",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "default": "Default",
+                "one": "One",
+                "two": "Two",
+                "three": "Three",
+                "four": "Four",
+                "five": "Five"
+            },
+            "default_value": [
+                "default"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_557bf2e2d6824",
+            "label": "Margin between grid items in px",
+            "name": "margin_between_items",
+            "type": "number",
+            "instructions": "Enter an integer number for the margin between items, do not enter px. Enter 0 for zero margin",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": "px",
+            "min": 0,
+            "max": "",
+            "step": 1,
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_557cc16ec8c9f",
+            "label": "Border Radius of grid items (in pixels)",
+            "name": "items_border_radius",
+            "type": "number",
+            "instructions": "Enter a rounded border radius for grid items, values from 0 to 100 ( 0 - no rounded corners. 100 - maximum rounded corners )",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": "px",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_54dd07258886b",
+            "label": "Tile width or height",
+            "name": "custom_size",
+            "type": "text",
+            "instructions": "This sets tile width if sliding horizontally, or tile height is sliding vertically in pixels or percentage. (you can use something like 400px, or 30%). Leave blank to let it decide appropriate size automatically",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5521cc97fb616",
+            "label": "Override number of posts per page",
+            "name": "override_posts_per_page",
+            "type": "number",
+            "instructions": "Set to 0 if you want to use default number posts per page which is set in \"Settings\" -> \"Reading\" -> \"Blog pages show at most\" parameter, or you can set it to custom number, this will make this page output only that number of posts per page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": 0,
+            "max": "",
+            "step": 1,
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_553c2c5a39b40",
+            "label": "Excerpt Length for Tiles",
+            "name": "index_excerpt_length",
+            "type": "number",
+            "instructions": "Leave blank to use default that was set in Theme Settings > General settings",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 25,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "words",
+            "min": 0,
+            "max": "",
+            "step": 1,
+            "readonly": 0,
+            "disabled": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-masonry.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-testimonials.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-list-categories.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-full-height.php"
+            }
+        ],
+        [
+            {
+                "param": "post_format",
+                "operator": "==",
+                "value": "gallery"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "osetin_testimonial"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "shop.php"
+            }
+        ]
+    ],
+    "menu_order": -2,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "field",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1538780779
+}

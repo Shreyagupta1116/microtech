@@ -1,0 +1,12 @@
+#birs_service_length, 
+#birs_service_padding,
+#birs_service_price,
+#birs_service_capacity {
+	width: 6em;
+}
+
+#appointer-staff-services input,
+#appointer-service-staff input, 
+#appointer-service-locations input {
+    margin-right: 4px;
+}

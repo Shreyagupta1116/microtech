@@ -1,0 +1,397 @@
+{
+    "key": "group_55118315de9b0",
+    "title": "Map Pins",
+    "fields": [
+        {
+            "key": "field_58243528e1947",
+            "label": "Main Pin Settings",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5820eba1ad93f",
+            "label": "How to set pin coordinates?",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Coordinates are just a basic horizontal and vertical percentage position from a top left corner of your map image. To see how it works on a default map <a href=\"http:\/\/d16jcb2lo4kf20.cloudfront.net\/wp-moon\/map-explain.png\" target=\"_blank\">click here<\/a>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_55118331dfa75",
+            "label": "Horizontal Coordinate",
+            "name": "horizontal_coordinate",
+            "type": "number",
+            "instructions": "Percent location on a map (100 is far right, 0 is far left)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "%",
+            "min": 0,
+            "max": 100,
+            "step": ""
+        },
+        {
+            "key": "field_55118355dfa76",
+            "label": "Vertical Coordinate",
+            "name": "vertical_coordinate",
+            "type": "number",
+            "instructions": "Percent location on a map (100 is very bottom, 0 is very top)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "%",
+            "min": 0,
+            "max": 100,
+            "step": ""
+        },
+        {
+            "key": "field_581d89d02ea2d",
+            "label": "Custom URL",
+            "name": "custom_url",
+            "type": "text",
+            "instructions": "Applies to Photos on a map page only! By default clicking the map pin will open a left panel with a set of photos associated with this pin, but you can also assign a custom URL where the user will be redirected when they click this map pin. Leave blank to use default behaviour",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_582434eee1946",
+            "label": "Connect Pins",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5820cefe24495",
+            "label": "Connected Pins",
+            "name": "connected_pins",
+            "type": "repeater",
+            "instructions": "You can connect other pins to this one, this allows you to have some sort of a category for other pins, let's say you have a world map and want to have a pin for Italy, clicking on this pin will open a map page with all connected pins that you select here, which could be cities like Rome, Milan, Naples etc...",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_58212196b72d8",
+            "min": "",
+            "max": "",
+            "layout": "row",
+            "button_label": "Add Location Pin",
+            "sub_fields": [
+                {
+                    "key": "field_58212196b72d8",
+                    "label": "Connected Pin",
+                    "name": "connected_pin",
+                    "type": "post_object",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "osetin_map_pin"
+                    ],
+                    "taxonomy": [],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "return_format": "object",
+                    "ui": 1
+                },
+                {
+                    "key": "field_582124bdb72d9",
+                    "label": "Custom Horizontal Coordinate (Optional)",
+                    "name": "custom_horizontal_coordinate",
+                    "type": "number",
+                    "instructions": "Percent location on a map (100 is far right, 0 is far left).",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "%",
+                    "min": "",
+                    "max": "",
+                    "step": ""
+                },
+                {
+                    "key": "field_58212541b72da",
+                    "label": "Custom Vertical Coordinate (Optional)",
+                    "name": "custom_vertical_coordinate",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "%",
+                    "min": "",
+                    "max": "",
+                    "step": ""
+                },
+                {
+                    "key": "field_58212599b72db",
+                    "label": "Custom URL (Optional)",
+                    "name": "custom_url",
+                    "type": "text",
+                    "instructions": "You can set a custom URL where the user will be sent when they click on this pin. Optional.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_58243539e1948",
+            "label": "Pin Single Page",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5821829b818da",
+            "label": "Background Image for Left Panel",
+            "name": "content_left_bg_image",
+            "type": "image",
+            "instructions": "You can set custom background image for a left panel on a map pin single page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5820d015ad93e",
+            "label": "Custom map for pin page",
+            "name": "custom_map_image",
+            "type": "image",
+            "instructions": "You can set a custom map for a pin's single page, let's say you have this pin on a world map labeled United States, and you want clicking on it to bring up a map of United States with all connected pins that could be used as cities, then you have to upload a map of USA here.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_58238bfb17d20",
+            "label": "Click on Pins opens",
+            "name": "click_on_pins_opens",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "panel_with_posts": "Panel on the left with posts connected to this pin location",
+                "pin_page": "Separate page for this pin location"
+            },
+            "default_value": [
+                "panel_with_posts"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_58212b01fd425",
+            "label": "Remove padding around map",
+            "name": "remove_padding_around_map",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Remove Padding",
+            "default_value": 0
+        },
+        {
+            "key": "field_5821855b818db",
+            "label": "Small Image\/Icon for left panel above text",
+            "name": "left_content_logo_icon_image_url",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_58218de885e69",
+            "label": "Left Content Background Type",
+            "name": "content_left_color_scheme",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "default": "Default",
+                "light": "Light",
+                "dark": "Dark"
+            },
+            "default_value": [
+                "default"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "osetin_map_pin"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1479151875
+}

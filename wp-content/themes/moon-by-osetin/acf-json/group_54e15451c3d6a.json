@@ -1,0 +1,69 @@
+{
+    "key": "group_54e15451c3d6a",
+    "title": "Gallery Settings",
+    "fields": [
+        {
+            "key": "field_54e1545de8e40",
+            "label": "Gallery Photos",
+            "name": "gallery_photos",
+            "type": "gallery",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "min": "",
+            "max": "",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": 0,
+            "min_height": 0,
+            "min_size": 0,
+            "max_width": 0,
+            "max_height": 0,
+            "max_size": 0,
+            "mime_types": "",
+            "insert": "append"
+        },
+        {
+            "key": "field_56d7f786cf7e6",
+            "label": "Make gallery selectable by user (photo proofing)",
+            "name": "make_gallery_selectable_by_user",
+            "type": "true_false",
+            "instructions": "This needs to be checked if you want to send this gallery to your client so he can approve the photos he likes (photo proofing) and then you can see which photos he has selected.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Allow users to mark photos they like",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_format",
+                "operator": "==",
+                "value": "gallery"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1505765061
+}

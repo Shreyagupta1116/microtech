@@ -1,0 +1,4 @@
+User-agent: *
+disallow: /
+
+sitemap:http://www.impilo.in/micr/sitemap.xml

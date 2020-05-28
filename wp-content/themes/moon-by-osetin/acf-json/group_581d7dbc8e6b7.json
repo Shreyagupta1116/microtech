@@ -1,0 +1,281 @@
+{
+    "key": "group_581d7dbc8e6b7",
+    "title": "Photos on a map",
+    "fields": [
+        {
+            "key": "field_582435e964a1c",
+            "label": "Map Settings",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_581d7dc2e1032",
+            "label": "Custom Map Image",
+            "name": "custom_map_image",
+            "type": "image",
+            "instructions": "You can set custom map image",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_581d7f08e1034",
+            "label": "Map Bounded By",
+            "name": "map_bounded_by",
+            "type": "select",
+            "instructions": "You can select how the map is shown on the page, you can either make it occupy all the height or all the width",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "height": "Height",
+                "width": "Width"
+            },
+            "default_value": [
+                "height"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_581ec973cd045",
+            "label": "Remove Padding Around Map",
+            "name": "remove_padding_around_map",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Remove padding around map",
+            "default_value": 0
+        },
+        {
+            "key": "field_582435ff64a1d",
+            "label": "Pick Locations",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_581d7e50e1033",
+            "label": "Show only selected pins",
+            "name": "connected_pins",
+            "type": "repeater",
+            "instructions": "By default all your map pins will be outputted here, but sometimes you want to have multiple maps with different pins shown on each of them, now you can select specific pins you want to show on this page, or you an leave it blank and it will show all pins",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_5822e9db248a0",
+            "min": "",
+            "max": "",
+            "layout": "row",
+            "button_label": "Add Location Pin",
+            "sub_fields": [
+                {
+                    "key": "field_5822e9db248a0",
+                    "label": "Select Pin",
+                    "name": "connected_pin",
+                    "type": "post_object",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "osetin_map_pin"
+                    ],
+                    "taxonomy": [],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "return_format": "object",
+                    "ui": 1
+                },
+                {
+                    "key": "field_5822ea4d248a1",
+                    "label": "Custom Horizontal Coordinate (Optional)",
+                    "name": "custom_horizontal_coordinate",
+                    "type": "number",
+                    "instructions": "Override default that is set on map pin edit page. Percent location on a map (100 is far right, 0 is far left).",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "%",
+                    "min": "",
+                    "max": "",
+                    "step": ""
+                },
+                {
+                    "key": "field_5822ea81248a2",
+                    "label": "Custom Vertical Coordinate (Optional)",
+                    "name": "custom_vertical_coordinate",
+                    "type": "number",
+                    "instructions": "Override default that is set on map pin edit page. Percent location on a map (100 is very bottom, 0 is very top).",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "%",
+                    "min": "",
+                    "max": "",
+                    "step": ""
+                },
+                {
+                    "key": "field_5822eab3248a3",
+                    "label": "Custom URL (Optional)",
+                    "name": "custom_url",
+                    "type": "text",
+                    "instructions": "You can set a custom URL where the user will be sent when they click on this pin. Optional.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_581ea90c7e3fb",
+            "label": "Pin Style",
+            "name": "pin_style",
+            "type": "select",
+            "instructions": "You can select which style of pins to show, classic pins are the original style that has a pin label and a circular pin of location, complex pin style is a new type of pins where a list of photos appear for that location with a link to see more.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "classic": "Classic",
+                "complex": "Complex"
+            },
+            "default_value": [
+                "classic"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_58238c604b4e6",
+            "label": "Click on Pins opens",
+            "name": "click_on_pins_opens",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "panel_with_posts": "Panel on the left with posts connected to this pin location",
+                "pin_page": "Separate page for this pin location"
+            },
+            "default_value": [
+                "panel_with_posts"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-photos-on-map.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1478768158
+}

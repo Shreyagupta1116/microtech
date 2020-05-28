@@ -1,0 +1,126 @@
+
+
+// THUMBS
+
+.content-thumbs-visible {
+
+  .post-controls.details-btn-holder {
+    .content-thumbs-show-btn {
+      display: none;
+    }
+    .content-thumbs-hide-btn {
+      display: inline-block;
+    }
+  }
+}
+
+.content-thumbs-hidden {
+
+  .post-controls.details-btn-holder {
+    .content-thumbs-show-btn {
+      display: inline-block;
+    }
+    .content-thumbs-hide-btn {
+      display: none;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+// MIDDLE
+
+
+.content-middle-visible {
+  .content-middle-hide-icon {
+    .transition(all 0.5s ease-in-out);
+  }
+  .post-controls.details-btn-holder {
+    .content-middle-show-btn {
+      display: none;
+    }
+    .content-middle-hide-btn {
+      display: inline-block;
+    }
+  }
+}
+
+.content-middle-hidden {
+  .content-middle-show-btn {
+    display: inline-block;
+  }
+  .content-middle-hide-btn {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// LEFT
+
+.content-left-visible {
+  .content-left-show-btn {
+    display: none;
+  }
+  .content-left-hide-icon {
+    .transition(all 0.5s ease-in-out);
+  }
+}
+
+.content-left-hidden {
+  .content-left-show-btn {
+    display: inline-block!important;
+  }
+}
+
+
+
+
+
+
+
+
+// ONLY RIGHT PANEL IS VISIBLE
+
+.content-left-hidden.content-middle-hidden.content-thumbs-hidden.menu-on-the-left-hidden, 
+.content-left-hidden.content-middle-visible.content-middle-hover-when-visible.content-thumbs-hidden.menu-on-the-left-hidden, 
+.content-left-hidden.content-middle-visible.content-middle-hover-when-visible.content-thumbs-hidden.menu-on-the-left-removed, 
+.content-left-hidden.content-middle-hidden.content-thumbs-hidden.menu-on-the-left-removed {
+  .content-left-show-btn {
+    display: inline-block;
+  }
+  .post-controls {
+    &.pc-left {
+      .transform(translateX(-50%));
+      left: 50%;
+    }
+  }
+  .single-item-photo {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    background-position: center center;
+    margin: 0px auto;
+    img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      .transform(translate(-50%, -50%));
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+    "key": "group_5562df1a4ca98",
+    "title": "Video Settings",
+    "fields": [
+        {
+            "key": "field_5562e306b7538",
+            "label": "Shortcode",
+            "name": "video_shortcode",
+            "type": "text",
+            "instructions": "Input a shortcode like [youtube id=\"VIDEO_ID\"] or [vimeo id=\"VIDEO_ID\"] replacing VIDEO_ID with an ID of the video you want to embed video.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5563bc819d0a9",
+            "label": "Play video on index",
+            "name": "play_video_on_index",
+            "type": "select",
+            "instructions": "Select if you want video to play on index page, or just link to the single post",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "yes": "Yes",
+                "no": "No"
+            },
+            "default_value": {
+                "no": "no"
+            },
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_format",
+                "operator": "==",
+                "value": "video"
+            }
+        ]
+    ],
+    "menu_order": -2,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1505762547
+}

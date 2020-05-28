@@ -1,0 +1,11 @@
+2020-05-24T10:09:24+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on null in /home/maverick/public_html/micro/wp-content/themes/moon-by-osetin/woocommerce/content-product.php:45
+Stack trace:
+#0 /home/maverick/public_html/micro/wp-includes/template.php(725): require()
+#1 /home/maverick/public_html/micro/wp-content/plugins/woocommerce/includes/wc-core-functions.php(197): load_template('/home/maverick/...', false)
+#2 /home/maverick/public_html/micro/wp-content/themes/moon-by-osetin/woocommerce/archive-product.php(232): wc_get_template_part('content', 'product')
+#3 /home/maverick/public_html/micro/wp-content/plugins/woocommerce/includes/wc-core-functions.php(251): include('/home/maverick/...')
+#4 /home/maverick/public_html/micro/wp-content/themes/moon-by-osetin/shop.php(9): wc_get_template('archive-product...')
+#5 /home/maverick/public_html/micro/wp-includes/template-loader.php(106): include('/home/maverick/...')
+#6 /home/maverick/public_html/micro/wp-blog-header.php(19): require_once('/home/maverick/...')
+#7 /home/maverick/pub in /home/maverick/public_html/micro/wp-content/themes/moon-by-osetin/woocommerce/content-product.php on line 45
+
